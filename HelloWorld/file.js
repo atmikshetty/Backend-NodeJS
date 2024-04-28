@@ -1,9 +1,12 @@
 const fs = require('fs')
+const os = require("os")
 
-// // Sync
+// console.log(os.cpus().length);
+
+// // Sync...Blocking Operation
 // fs.writeFileSync('./test.txt', 'Hello First File');
 
-// // Async
+// // Async... Non Blocking Operation
 // fs.writeFile('./test.txt', 'Hello Async File', (err) => {})
 
 // // Reading Sync
@@ -28,5 +31,5 @@ const fs = require('fs')
 // // Delete Fike
 // fs.unlinkSync('./copy.txt')
 
-// Status of a file
-console.log(fs.statSync('./test.txt'));
+// // Status of a file
+// console.log(fs.statSync('./test.txt'));
